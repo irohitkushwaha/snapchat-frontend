@@ -1,3 +1,4 @@
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
     remotePatterns: [
@@ -15,6 +16,7 @@ const nextConfig = {
             key: 'Content-Security-Policy',
             value: `
               default-src 'self';
+              connect-src 'self' https://api.snapvideodownloader.com;
               media-src 'self' https://cf-st.sc-cdn.net;
               script-src 'self' 'unsafe-eval' 'unsafe-inline';
               style-src 'self' 'unsafe-inline';
@@ -28,7 +30,6 @@ const nextConfig = {
 };
 
 export default nextConfig;
-  
 
 // // next.config.js
 // /** @type {import('next').NextConfig} */

@@ -7,26 +7,6 @@ const nextConfig = {
       },
     ],
   },
-  async headers() {
-    return [
-      {
-        source: '/(.*)',
-        headers: [
-          {
-            key: 'Content-Security-Policy',
-            value: `
-              default-src 'self';
-              connect-src 'self' https://api.snapvideodownloader.com;
-              media-src 'self' https://cf-st.sc-cdn.net;
-              script-src 'self' 'unsafe-eval' 'unsafe-inline';
-              style-src 'self' 'unsafe-inline';
-              img-src 'self' data: https:;
-            `.replace(/\s{2,}/g, ' ').trim()
-          }
-        ]
-      }
-    ]
-  }
 };
 
 export default nextConfig;

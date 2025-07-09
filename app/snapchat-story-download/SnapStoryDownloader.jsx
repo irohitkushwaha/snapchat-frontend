@@ -234,8 +234,8 @@ const SnapchatStoryDownloader = () => {
               </p>
               <div className="bg-slate-900/50 rounded-xl w-[306] p-[3px] border border-slate-600/50">
                 <img
-                  src="/screenshot-share-copy-snapchat-spotlight.avif"
-                  alt="Step 1 - Find Snapchat username"
+                  src="/screenshot-find-username.avif"
+                  alt="Screenshot for step 1 - find the username or profile link"
                   className="w-full object-cover rounded-lg border border-slate-600/50"
                 />
               </div>
@@ -254,8 +254,8 @@ const SnapchatStoryDownloader = () => {
               </p>
               <div className="bg-slate-900/50 rounded-xl w-[306] p-[3px] border border-slate-600/50">
                 <img
-                  src="/screenshot-share-copy-snapchat-spotlight.avif"
-                  alt="Step 2 - Paste username and get story"
+                  src="/Screenshot-paste-username.avif"
+                  alt="Screenshot for step 2 - paste username and get story"
                   className="w-full object-cover rounded-lg border border-slate-600/50"
                 />
               </div>
@@ -274,8 +274,8 @@ const SnapchatStoryDownloader = () => {
               </p>
               <div className="bg-slate-900/50 rounded-xl w-[306] p-[3px] border border-slate-600/50">
                 <img
-                  src="/screenshot-share-copy-snapchat-spotlight.avif"
-                  alt="Step 3 - Download story media"
+                  src="/Screenshot-download-story-snapchat.avif"
+                  alt="Screenshot for step 3 - download story media"
                   className="w-full object-cover rounded-lg border border-slate-600/50"
                 />
               </div>

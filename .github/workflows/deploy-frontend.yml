@@ -158,13 +158,13 @@ jobs:
           
           # Install production dependencies
           echo "📦 Installing production dependencies..."
-          sudo npm ci --production --ignore-scripts
+          npm ci --production --ignore-scripts
           
           # Start/restart the application
           echo "🚀 Starting application..."
-          sudo pm2 restart snapvideodownloader || sudo pm2 start npm --name "snapvideodownloader" -- start
+          pm2 restart snapvideodownloader || pm2 start npm --name "snapvideodownloader" -- start
           
           # Show final status
           echo "=== DEPLOYMENT STATUS ==="
-          sudo pm2 status
-          sudo pm2 logs snapvideodownloader --lines 10 --nostream
+          pm2 status
+          pm2 logs snapvideodownloader --lines 10 --nostream

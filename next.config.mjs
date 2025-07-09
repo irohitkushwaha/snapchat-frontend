@@ -1,17 +1,33 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-      remotePatterns: [
-        {
-          hostname: "*",
-        },
-      ],
-    },
-  };
-  
-  
-  
-  export default nextConfig;
+  images: {
+    remotePatterns: [
+      {
+        hostname: "*",
+      },
+    ],
+  },
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'Content-Security-Policy',
+            value: `
+              default-src 'self';
+              media-src 'self' https://cf-st.sc-cdn.net;
+              script-src 'self' 'unsafe-eval' 'unsafe-inline';
+              style-src 'self' 'unsafe-inline';
+              img-src 'self' data: https:;
+            `.replace(/\s{2,}/g, ' ').trim()
+          }
+        ]
+      }
+    ]
+  }
+};
+
+export default nextConfig;
   
 
 // // next.config.js

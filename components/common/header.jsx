@@ -19,7 +19,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white">
+    <header className="bg-[#191d2f] text-white">
       <nav
         aria-label="Global"
         className="flex px-[15px] py-[16px] lg:px-8 lg:py-4 shadow-sm shadow-gray-300 justify-between items-center"
@@ -29,7 +29,7 @@ export default function Header() {
             <span className="hidden">Snapchat Video Download</span>
             <img
               alt="Logo of SnapVideoDownloader.com"
-              src="/snap-video-downloader-logo.png"
+              src="/snapvideodownloader-logo.png"
               className="md:h-10 h-8 w-auto"
             />
           </Link>
@@ -38,19 +38,19 @@ export default function Header() {
           <button
             type="button"
             onClick={() => setMobileMenuOpen(true)}
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
           >
             <span className="sr-only">Open main menu</span>
-            <Bars3Icon aria-hidden="true" className="size-7" />
+            <Bars3Icon aria-hidden="true" className="size-7 text-white" />
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          <Link href="/" className="text-[16px] font-semibold text-gray-800">
+          <Link href="/" className="text-[16px] font-semibold text-white">
             Snapchat Video Downloader
           </Link>
           <Link
             href="/snapchat-story-download"
-            className="text-[16px] font-semibold text-gray-800"
+            className="text-[16px] font-semibold text-white"
           >
             Snapchat Story Downloader
           </Link>
@@ -59,26 +59,26 @@ export default function Header() {
       <Dialog
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}
-        className="lg:hidden"
+        className="lg:hidden text-white"
       >
-        <div className="fixed inset-0 z-50" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <div className="fixed inset-0 z-50m text-white" />
+        <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#191d2f] p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 text-white">
           <div className="flex items-center justify-between">
             <Link href="/">
               <span className="hidden">Snapchat Video Downloader</span>
               <img
                 alt="Logo of SnapVideoDownloader"
-                src="/snap-video-downloader-logo.png"
+                src="/snapvideodownloader-logo.png"
                 className="h-7 w-auto"
               />
             </Link>
             <button
               type="button"
               onClick={() => setMobileMenuOpen(false)}
-              className="-m-2.5 rounded-md p-2.5 text-gray-700"
+              className="-m-2.5 rounded-md p-2.5 text-white"
             >
-              <span className="sr-only">Close menu</span>
-              <XMarkIcon aria-hidden="true" className="size-8" />
+              <span className="sr-only text-white">Close menu</span>
+              <XMarkIcon aria-hidden="true" className="size-8 text-white" />
             </button>
           </div>
           <div className="mt-6 flow-root">
@@ -86,14 +86,14 @@ export default function Header() {
               <div className="space-y-2 py-6">
                 <Link
                   href="/"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-50"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Snapchat Video Downloader
                 </Link>
                 <Link
                   href="/snapchat-story-download"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-50"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Snapchat Story Downloader

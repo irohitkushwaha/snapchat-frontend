@@ -29,7 +29,7 @@ export default function Header() {
             <span className="hidden">Snapchat Video Download</span>
             <img
               alt="Logo of SnapVideoDownloader.com"
-              src="/snapvideodownloader-logo.png"
+              src="/snapvideodownloader-logo.avif"
               className="md:h-10 h-8 w-auto"
             />
           </Link>
@@ -68,7 +68,7 @@ export default function Header() {
               <span className="hidden">Snapchat Video Downloader</span>
               <img
                 alt="Logo of SnapVideoDownloader"
-                src="/snapvideodownloader-logo.png"
+                src="/snapvideodownloader-logo.avif"
                 className="h-7 w-auto"
               />
             </Link>

@@ -315,15 +315,13 @@ const SnapchatStoryDownloader = () => {
                 Is it safe to download stories from Snapchat?
               </h3>
               <p className="text-slate-400">
-                Yes, our tool is completely safe and secure. We don't store any
-                of your downloaded media on our server. All content is directly
-                served from Snapchat to your browser.
+                Yes, our tool is completely safe and secure for downloading the stories that includes images & videos from snapchat. 
               </p>
             </div>
 
             <div className="bg-slate-900/50 rounded-xl p-6 border border-slate-600/50">
               <h3 className="text-lg font-semibold text-slate-200 mb-3">
-                In which format do images and videos get downloaded?
+                In which format do images and videos get downloaded for snapchat story?
               </h3>
               <p className="text-slate-400">
                 Images are downloaded in JPG format and videos in MP4 format,
